@@ -1,0 +1,72 @@
+
+#eureka:
+#   client:
+#      serviceUrl:
+#         defaultZone: http://localhost:8761/eureka
+#      instance:
+#      preferIpAddress: true
+#spring:
+#   application:
+#      name: fundoo
+
+---
+spring:
+    profiles: dev
+name: FundooNoteDevelopment api
+environment: development
+servers: 
+    - http:/login
+    - http:/registration
+    - http:/forgotPassword
+    - http:/updatepassword/{userId}
+    - http:/getUserList
+    - http:/getNoteList/{id}
+    - http:/getNoteList/add
+    - http:/getUserList
+     - http:/getNoteList/update
+     - http:/getNoteList/Ascending
+    
+    
+    
+   
+server:
+   port: 8081   
+   
+url: jdbc:mysql://localhost/test
+newusername: root
+password: hemanth123
+driverclassname: com.mysql.cj.jdbc.Driver
+    
+
+    
+message: This is property file specfic to fundoonote development environment
+    
+ 
+---
+spring:
+    profiles: testing
+name: FundooNote    MockitoTesting 
+environment: testing
+servers: 
+    - http:/getNoteList/{id}
+    - http:/getNoteList/add
+    - http:/getUserList
+     - http:/getNoteList/update
+     - http:/getNoteList/Ascending
+    
+server:
+   port: 8082   
+    
+url: jdbc:mysql://localhost/test
+newusername: root
+password: hemanth123
+driverclassname: com.mysql.cj.jdbc.Driver
+message: This is the property file specific tofundooNote testing evironment
+
+---
+
+
+
+
+
+

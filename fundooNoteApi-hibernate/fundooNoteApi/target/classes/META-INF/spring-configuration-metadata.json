@@ -1,0 +1,52 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.fundoonote.noteapi.model.YAMLConfig",
+      "name": "",
+      "type": "com.fundoonote.noteapi.model.YAMLConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.fundoonote.noteapi.model.YAMLConfig",
+      "name": "driverclassname",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fundoonote.noteapi.model.YAMLConfig",
+      "name": "environment",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fundoonote.noteapi.model.YAMLConfig",
+      "name": "message",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fundoonote.noteapi.model.YAMLConfig",
+      "name": "name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fundoonote.noteapi.model.YAMLConfig",
+      "name": "newusername",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fundoonote.noteapi.model.YAMLConfig",
+      "name": "password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.fundoonote.noteapi.model.YAMLConfig",
+      "name": "servers",
+      "type": "java.util.List<java.lang.String>"
+    },
+    {
+      "sourceType": "com.fundoonote.noteapi.model.YAMLConfig",
+      "name": "url",
+      "type": "java.lang.String"
+    }
+  ]
+}
