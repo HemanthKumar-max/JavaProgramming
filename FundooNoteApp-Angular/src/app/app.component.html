@@ -1,0 +1,102 @@
+﻿<mat-sidenav-container  fullscreen>
+    <mat-sidenav  #sidenav  opened mode="side" position="start" >
+       
+        <mat-nav-list>
+          <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
+            <p><mat-icon>dashboard</mat-icon></p> <span class="nav-caption"><p>Home Dashboard</p></span>
+            </a>
+            <a mat-list-item routerLink="/app-add-note" (click)="onSidenavClose()">
+            <p>	<mat-icon>note_add</mat-icon></p><span class="nav-caption"><p>Notes</p></span>   
+            </a>
+            <a mat-list-item routerLink="/app-display-note" (click)="onSidenavClose()">
+                <p><mat-icon>visibility</mat-icon></p> <span class="nav-caption"><p>View Notes</p></span>   
+            </a>
+            <a mat-list-item routerLink="#" (click)="onSidenavClose()">
+                <p><mat-icon>alarm_on</mat-icon></p><span class="nav-caption"><p>Remainders</p></span>
+            </a>
+
+            <a mat-list-item routerLink="#" (click)="onSidenavClose()">
+               <p><mat-icon>edit</mat-icon></p><span class="nav-caption"><p>Edit Labels</p></span>
+            </a>
+
+            <a mat-list-item routerLink="#" (click)="onSidenavClose()">
+                <p><mat-icon>archive</mat-icon></p><span class="nav-caption"><p>Archieve</p></span>
+            </a>
+
+
+            <mat-list-item [matMenuTriggerFor]="menu">
+              <p><mat-icon>unfold_more</mat-icon></p>
+                <a matline><p>About</p></a>
+            </mat-list-item>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item (click)="onSidenavClose()"><mat-icon>account_circle</mat-icon>View profile</button>
+              <button mat-menu-item (click)="onSidenavClose()"></button>
+            </mat-menu>
+            
+
+
+        </mat-nav-list>
+   </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar color="primary" class="mat-elevation-z8">
+        <button mat-icon-button (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+                </button>
+             <span><mat-icon>sports_handball</mat-icon>FundooNote</span>
+            <div class="spacer"></div>
+        <button mat-button routerLink="app-all-registered-users"><span class="material-icons">visibility</span></button>
+            <button mat-button [matMenuTriggerFor]="others"><span class="material-icons">engineering</span></button>
+            <mat-menu #others="matMenu">
+            <button mat-menu-item  routerLink="" > <span class="material-icons">info</span>About Fundoo</button>
+            <button mat-menu-item  routerLink="login"><span class="material-icons">logout</span>logout</button>
+            </mat-menu>
+            <button mat-button routerLink="app-userlogin"><span class="material-icons">login</span></button>
+            <span class="toolbar-spacer">
+            <a mat-raised-button color="accent" routerLink="register"><span class="material-icons">account_circle</span></a>
+            </span>
+            
+        </mat-toolbar>
+
+        
+        <div class="main-content">
+    </div>
+    <div class="container">
+       <div class="jumbotron align-items-center">
+       <div class="row">
+                <div class="col-sm-6 offset-sm-3">
+                    <alert></alert>
+                    <router-outlet></router-outlet> 
+              </div>
+              </div>
+        </div>
+    </div> 
+    
+</mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 

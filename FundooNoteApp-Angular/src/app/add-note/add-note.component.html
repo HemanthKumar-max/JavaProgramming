@@ -1,0 +1,43 @@
+<form [formGroup]="noteForm" (ngSubmit)="onSubmit()">
+    <mat-card class="note-card">
+      <mat-card-title>
+        Add a Note
+      </mat-card-title>
+      <mat-card-content>
+        <mat-form-field appearance="standard">
+            <mat-label>Add a title</mat-label>
+            <input type="text" formControlName="title" placeholder="Enter your title..."  rows="3" maxlength="300"   matInput [ngClass]= "{ 'is-invalid': submitted && f.title.errors }">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+        <mat-form-field appearance="standard">
+            <mat-label>Add a content</mat-label>
+            <input type="text" formControlName="content" placeholder="Enter your content..."  rows="3" maxlength="300"   matInput [ngClass]= "{ 'is-invalid': submitted && f.content.errors }">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+        
+          <mat-form-field appearance="standard">
+            <mat-label>createdAt</mat-label>
+            <input type="text" formControlName="createdAt" placeholder="Enter your created date..."  rows="3" maxlength="300"   matInput [ngClass]= "{ 'is-invalid': submitted && f.createdAt.errors }">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+
+          <mat-form-field appearance="standard">
+            <mat-label>updatedAt</mat-label>
+            <input type="text" formControlName="updatedAt" placeholder="Enter your updated date..."  rows="3" maxlength="300"   matInput [ngClass]= "{ 'is-invalid': submitted && f.updatedAt.errors }">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+          
+
+          
+
+
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button type="submit">Save me!</button>
+      </mat-card-actions>
+    </mat-card>
+   </form>

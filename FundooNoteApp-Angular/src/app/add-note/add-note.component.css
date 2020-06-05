@@ -1,0 +1,13 @@
+mat-form-field {
+    width: 100%;
+ }
+
+ .note-card{
+    display: flex;
+    padding: 20px; 
+   flex-wrap: wrap;
+    box-sizing: border-box; 
+   justify-content: center;
+   box-shadow: 0 4px 8px 0 rgba(52, 228, 82, 0.2), 0 6px 20px 0 rgba(95, 218, 146, 0.19);
+   border-radius: 40px;
+ }

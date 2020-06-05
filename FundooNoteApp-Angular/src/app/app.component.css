@@ -1,0 +1,64 @@
+.spacer {
+    flex: 11 13 auto;
+}
+
+.mat-toolbar{
+    height: 70px;
+    color:whitesmoke;
+}
+
+
+
+
+a{
+    border: none;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+a:hover, a:active{
+    background-color: #84ee6e;
+    color: rgb(62, 236, 18);
+    opacity: 1;
+}
+
+p{
+    font-size: 15px;
+}
+ 
+.nav-caption{
+    display: red;
+    padding-left: 6px;
+}
+
+.mat-sidenav{
+    text-shadow: 0 -1px 0 rgb(245, 38, 11);
+    position: absolute;
+     transform: translate(-50%, -50%); 
+     transition: width 0.2s ease, height 0.2s ease; 
+    background: linear-gradient(to right, #99ffcc 77%, #33ccff 92%);
+}
+
+
+
+button {
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 1px #999;
+  }
+
+  button:hover {background-color: #e2ee9d}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+
